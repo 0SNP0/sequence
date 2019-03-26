@@ -21,4 +21,4 @@ model.fit(train_in, train_out, epochs=5)
 test_loss, test_acc = model.evaluate(test_in, test_out)
 print('Test accuracy:', test_acc)
 
-model.save('my_model.h5')
+model.save_weights('./checkpoints/model')
