@@ -1,2 +1,4 @@
 
-.vscode/settings.json
+.vscode
+mv_to_midi/*.o
+mv_to_midi/a.exe
