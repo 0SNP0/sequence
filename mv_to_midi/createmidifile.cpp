@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
 
    // C3 C4 E C F C E C D B3 C4 A3 F G C-
    int bass[50] =   {48,60,64,60,65,60,64,60,62,59,60,57,53,55,48,-1};
-   int brhythm[50]= { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2,-1};
+   double brhythm[50]= { 0.5, 1, 1, 0.5, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2,-1};
 
 
    // store a melody line in track 1 (track 0 left empty for conductor info)

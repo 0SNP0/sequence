@@ -11,7 +11,7 @@ for i in range(len(a)-4, -1, -1):
 
 print(b)
 
-file = open('melody.txt', 'w')
+file = open('melody.seq', 'w')
 for n in b:
     for p in n:
         file.write(str(p) + ' ')
