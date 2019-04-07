@@ -5,3 +5,5 @@ mv_to_midi/a.exe
 melody.seq
 *.mid
 mv_to_midi/convert.exe
+
+\.directory
