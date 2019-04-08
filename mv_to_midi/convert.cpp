@@ -6,7 +6,44 @@
 using namespace std;
 using namespace smf;
 
+int to_note(int keynote, int ton, string harmony = "natural_minor") {
+    if (harmony == "natural_minor") {
+        --keynote;
+        int oct = keynote / 7;
+        keynote = keynote % 7;
+        switch (keynote)
+        {
+            case 0:
+                keynote = 60 + oct * 12;
+                break;
+            case 1:
+                keynote = 62 + oct * 12;
+                break;
+            case 2:
+                keynote = 63 + oct * 12;
+                break;
+            case 3:
+                keynote = 65 + oct * 12;
+                break;
+            case 4:
+                keynote = 67 + oct * 12;
+                break;
+            case 5:
+                keynote = 68 + oct * 12;
+                break;
+            case 6:
+                keynote = 70 + oct * 12;
+                break;
+            default:
+                break;
+        }
+    }
+    return keynote + ton;
+}
+
 int main(int tpq) {
+    int ton = 2;
+    cout << ton << endl;
     MidiFile fout;
     fout.absoluteTicks();
     fout.addTrack(1);
@@ -19,7 +56,7 @@ int main(int tpq) {
     vector<double> rhytm;
     double a;
     while (fin >> a) {
-        notes.push_back(a+59);
+        notes.push_back(to_note(a, ton)); 
         fin >> a;
         rhytm.push_back(a*4);
     }
