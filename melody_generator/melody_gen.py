@@ -3,7 +3,7 @@ from tensorflow import keras
 import numpy as np
 #import matplotlib.pyplot as plt
 
-train_in = np.array([1.0, 6.0, 5.0, 0.5, 1.0, 0.1]])
+train_in = np.array([[1.0, 6.0, 5.0, 0.5, 1.0, 0.1]])
 train_out = np.array([2.0])
 test_in, test_out = train_in, train_out
 

@@ -13,7 +13,7 @@ for i in range(0, takts*2):
     a += rhytms_half[random.randint(0,len(rhytms_half)-1)]
 print(a)
 
-melody = [[a[-3][0], a[-3][1]], [a[-2][0], a[-2][1]], [a[-1][0], a[-1][1]]]
+melody = [[random.randint(1,7), a[-3][1]], [random.randint(1,7), a[-2][1]], [random.randint(1,7), a[-1][1]]]
 
 model = core.NN_model()
 model.load()
@@ -27,4 +27,5 @@ file.write(qpm + ' ' + tonality + '\n')
 for note in melody:
     for p in note:
         file.write(str(p) + ' ')
+
 

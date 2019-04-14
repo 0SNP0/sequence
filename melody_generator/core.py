@@ -22,7 +22,7 @@ class NN_model:
 
     def predict(self, test_in):
         prediction = self.model.predict(test_in)
-        return np.argmax(prediction)
+        return np.argmax(prediction)+1
 
     def apredict(self, note1, note2, note3, rhytm, strong, pos):
         test_in = np.array([[note1, note2, note3, rhytm, strong, pos]])

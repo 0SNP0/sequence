@@ -44,16 +44,16 @@ int to_note(int keynote, int ton, string harmony = "natural_minor") {
 int main() {
     int tpq;
     int ton;
-    cout << ton << endl;
+    string mv_path="melody.seq";
+    ifstream fin(mv_path);
+    fin >> tpq >> ton;
+    cout << tpq << ' ' << ton << endl;
     MidiFile fout;
     fout.absoluteTicks();
     fout.addTrack(1);
     vector<uchar> midievent;
     midievent.resize(3);
     fout.setTicksPerQuarterNote(tpq);
-    string mv_path="melody.seq";
-    ifstream fin(mv_path);
-    fin >> tpq >> ton;
     vector<int> notes;
     vector<double> rhytm;
     double a;
