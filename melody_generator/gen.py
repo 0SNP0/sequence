@@ -1,4 +1,5 @@
 import sys
+import os
 import core
 import numpy as np
 import random
@@ -27,5 +28,6 @@ file.write(qpm + ' ' + tonality + '\n')
 for note in melody:
     for p in note:
         file.write(str(p) + ' ')
+file.__exit__()
 
-
+os.system('./convert')
