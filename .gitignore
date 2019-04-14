@@ -5,5 +5,5 @@ mv_to_midi/a.exe
 melody.seq
 *.mid
 mv_to_midi/convert.exe
-
+melody_generator/__pycache__
 \.directory
