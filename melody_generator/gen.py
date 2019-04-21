@@ -30,4 +30,7 @@ for note in melody:
         file.write(str(p) + ' ')
 file.__exit__()
 
-os.system('./convert')
+if sys.platform == "linux" or sys.platform == "linux2":
+    os.system('./convert')
+elif sys.platform == "win32":
+    os.system('./convert.exe')
