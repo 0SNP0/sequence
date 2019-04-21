@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/gkl
+gkl.so
+gkl.dylib
+gkl.dll
+gkl.a
+gkl.lib
+gkl-test-*
+*.exe
+*.o
+*.obj
+*.lst
+.directory
