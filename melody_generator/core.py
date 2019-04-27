@@ -13,8 +13,8 @@ class NN_model:
             loss='sparse_categorical_crossentropy',
             metrics=['accuracy'])
         
-    def train(self, train_in, train_out,):
-        self.model.fit(train_in, train_out, epochs=5)
+    def train(self, train_in, train_out):
+        self.model.fit(train_in, train_out, epochs=10)
     
     def eval(self, test_in, test_out):
         test_acc = self.model.evaluate(test_in, test_out)[1]

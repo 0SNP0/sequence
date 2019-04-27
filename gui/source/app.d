@@ -1,4 +1,5 @@
 import dlangui;
+import std.process;
 
 mixin APP_ENTRY_POINT;
 
