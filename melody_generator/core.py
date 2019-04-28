@@ -4,7 +4,7 @@ import numpy as np
 
 class NN_model:
     model = keras.Sequential([
-        keras.layers.Dense(128, activation=tf.nn.relu),
+        keras.layers.Dense(512, activation=tf.nn.relu),
         keras.layers.Dense(7, activation=tf.nn.softmax)
     ])
 
@@ -14,7 +14,7 @@ class NN_model:
             metrics=['accuracy'])
         
     def train(self, train_in, train_out):
-        self.model.fit(train_in, train_out, epochs=10)
+        self.model.fit(train_in, train_out, epochs=500)
     
     def eval(self, test_in, test_out):
         test_acc = self.model.evaluate(test_in, test_out)[1]
@@ -44,3 +44,4 @@ if __name__ == "__main__":
     model.eval(test_in, test_out)
     print(model.predict(test_in))
     print(model.apredict(1.0, 6.0, 5.0, 0.5, 1.0, 0.1))
+    model.save()

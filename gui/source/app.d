@@ -1,11 +1,13 @@
 import dlangui;
-import std.process;
+import std.process: executeShell;
 
 mixin APP_ENTRY_POINT;
 
+Widget gLayout;
+
 extern (C) int UIAppMain(string[] args) {
     // create window
-    Window window = Platform.instance.createWindow("GKL_DEBUG", null, WindowFlag.Modal, 500, 210);
+    Window window = Platform.instance.createWindow("GKL_DEBUG", null);
 
 	auto layout = parseML( q{
 VerticalLayout {
@@ -19,26 +21,35 @@ VerticalLayout {
             id: tempText
             text: "Temp"
         }
-        ComboBox {
+        EditLine {
             id: tempCombo
         }
 
 
         TextWidget {
-            id: toneText
-            text: "Tone"
+            id: nnText
+            text: "Model"
         }
         ComboBox {
-            id: toneCombo
+            id: modelCombo
         }
 
 
         TextWidget {
-            id: tickText
-            text: "Tick"
+            id: tonText
+            text: "Tonality"
         }
         ComboBox {
-            id: tickCombo
+            id: tonCombo
+        }
+
+
+        TextWidget {
+            id: lenghtText
+            text: "Lenght"
+        }
+        EditLine {
+            id: lenghtCombo
         }
 
 
@@ -53,22 +64,41 @@ VerticalLayout {
 
 	Button {
         id: saveClock
-        text: "Compile"
+        text: "Create"
     }
 }
 
 		}
 	);
 
-	window.mainWidget = layout;
+	gLayout = layout;
+	window.mainWidget = gLayout;
 
-	( cast( ComboBox )( layout.childById( "tempCombo" ) ) ).items = [ "test1", "test2" ];
-	( cast( ComboBox )( layout.childById( "toneCombo" ) ) ).items = [ "test1", "test2" ];
-	( cast( ComboBox )( layout.childById( "tickCombo" ) ) ).items = [ "test1", "test2" ];
+    ( cast( ComboBox )( layout.childById( "modelCombo" ) ) ).items = [ "Natural minor" ];
+	( cast( ComboBox )( layout.childById( "tonCombo" ) ) ).items = [ "test1", "test2" ];
+
+    auto clickHandler = new COnClickHandler();
+    layout.childById("saveClock").click = clickHandler;
 
     // show window
     window.show();
 
     // run message loop
     return Platform.instance.enterMessageLoop();
+}
+
+class COnClickHandler : OnClickHandler {
+    bool onClick( Widget src ) {
+        //string temp = (cast( EditLine )gLayout.childById( "tempCombo" ) ).text;
+        //string ton = (cast( EditLine )gLayout.childById( "tonCombo" ) ).text;
+        //string lenght = (cast( EditLine )gLayout.childById( "lenghtCombo" ) ).text;
+
+        Log.i("Execute gen.py");
+        auto genExec = executeShell("python ../melody_generator/gen.py 120 2 8");
+        if (genExec.status != 0) {
+            Log.i(genExec.output);
+            return false;
+        }
+        return true;
+    }
 }
