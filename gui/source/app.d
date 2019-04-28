@@ -1,7 +1,12 @@
 import dlangui;
-import std.process: executeShell;
+import std.string : replace;
+import std.process : executeShell;
 
 mixin APP_ENTRY_POINT;
+
+enum CD_PATH = "..";
+enum PROCESS_FILE = "./melody_generator/gen.py";
+enum EXECUTE_COMMAND_GEN = "cd " ~ CD_PATH ~ "; ~/anaconda3/envs/sequence/bin/python " ~ PROCESS_FILE ~ " (%#1) (%#2) (%#3);";
 
 Widget gLayout;
 
@@ -75,7 +80,7 @@ VerticalLayout {
 	window.mainWidget = gLayout;
 
     ( cast( ComboBox )( layout.childById( "modelCombo" ) ) ).items = [ "Natural minor" ];
-	( cast( ComboBox )( layout.childById( "tonCombo" ) ) ).items = [ "test1", "test2" ];
+	( cast( ComboBox )( layout.childById( "tonCombo" ) ) ).items = [ "C", "C#;", "D", "D#", "E", "F", "F#", "G", "G#", "A", "B", "H" ];
 
     auto clickHandler = new COnClickHandler();
     layout.childById("saveClock").click = clickHandler;
@@ -89,12 +94,14 @@ VerticalLayout {
 
 class COnClickHandler : OnClickHandler {
     bool onClick( Widget src ) {
-        //string temp = (cast( EditLine )gLayout.childById( "tempCombo" ) ).text;
-        //string ton = (cast( EditLine )gLayout.childById( "tonCombo" ) ).text;
-        //string lenght = (cast( EditLine )gLayout.childById( "lenghtCombo" ) ).text;
-
-        Log.i("Execute gen.py");
-        auto genExec = executeShell("python ../melody_generator/gen.py 120 2 8");
+        const string resExecCommand =
+            EXECUTE_COMMAND_GEN .replace( "(%#1)", ( cast( EditLine )gLayout.childById( "tempCombo" ) ).text )
+                            //.replace( "(%#2)", ( cast( EditLine )gLayout.childById( "tonCombo" ) ).text )
+                            .replace( "(%#2)", "2"d )
+                            .replace( "(%#3)", ( cast( EditLine )gLayout.childById( "lenghtCombo" ) ).text );
+        
+        Log.i( "Execute: " ~ resExecCommand );
+        auto genExec = executeShell( resExecCommand );
         if (genExec.status != 0) {
             Log.i(genExec.output);
             return false;
