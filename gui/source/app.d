@@ -95,10 +95,9 @@ VerticalLayout {
 class COnClickHandler : OnClickHandler {
     bool onClick( Widget src ) {
         const string resExecCommand =
-            EXECUTE_COMMAND_GEN .replace( "(%#1)", ( cast( EditLine )gLayout.childById( "tempCombo" ) ).text )
-                            //.replace( "(%#2)", ( cast( EditLine )gLayout.childById( "tonCombo" ) ).text )
-                            .replace( "(%#2)", "2"d )
-                            .replace( "(%#3)", ( cast( EditLine )gLayout.childById( "lenghtCombo" ) ).text );
+            EXECUTE_COMMAND_GEN .replace("(%#1)", (cast(EditLine)gLayout.childById("tempCombo")).text)
+                        .replace("(%#2)", to!string((cast(ComboBox)gLayout.childById("tonCombo")).selectedItemIndex))
+                        .replace("(%#3)", (cast(EditLine)gLayout.childById("lenghtCombo")).text);
         
         Log.i( "Execute: " ~ resExecCommand );
         auto genExec = executeShell( resExecCommand );
