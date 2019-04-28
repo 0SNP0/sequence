@@ -29,6 +29,7 @@ VerticalLayout {
         }
         EditLine {
             id: tempCombo
+            text: "120"
         }
 
 
@@ -56,12 +57,13 @@ VerticalLayout {
         }
         EditLine {
             id: lenghtCombo
+            text: "8"
         }
 
 
         DirEditLine {
             id: dirNameEdit
-            text: "Save folder..."
+            text: ""
         }
         EditLine {
             id: fileNameEdit
