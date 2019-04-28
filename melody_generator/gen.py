@@ -20,7 +20,7 @@ model = core.NN_model()
 model.load()
 
 for i in range(len(a)-4, -1, -1):
-    melody = [[model.apredict(a[i+1][0], a[i+2][0], a[i+3][0], a[i][1], a[i][2], i/len(a)), a[i][1]]] + melody
+    melody = [[model.apredict(melody[0][0], melody[1][0], melody[2][0], a[i][1], a[i][2], i/len(a)), a[i][1]]] + melody
 print(melody)
 
 file = open('melody.seq', 'w')
