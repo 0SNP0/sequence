@@ -13,7 +13,7 @@ Widget gLayout;
 
 extern (C) int UIAppMain(string[] args) {
     // create window
-    Window window = Platform.instance.createWindow("GKL_DEBUG", null);
+    Window window = Platform.instance.createWindow("Sequence", null);
 
 	auto layout = parseML( q{
 VerticalLayout {

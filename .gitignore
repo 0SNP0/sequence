@@ -7,3 +7,4 @@ melody.seq
 mv_to_midi/convert.exe
 melody_generator/__pycache__
 \.directory
+gui/sequence
