@@ -1,4 +1,5 @@
 import dlangui;
+import dlangui.dialogs.filedlg;
 import std.string : replace;
 import std.process : executeShell;
 
@@ -6,7 +7,7 @@ mixin APP_ENTRY_POINT;
 
 enum CD_PATH = "..";
 enum PROCESS_FILE = "./melody_generator/gen.py";
-enum EXECUTE_COMMAND_GEN = "cd " ~ CD_PATH ~ "; ~/anaconda3/envs/sequence/bin/python " ~ PROCESS_FILE ~ " (%#1) (%#2) (%#3);";
+enum EXECUTE_COMMAND_GEN = "cd " ~ CD_PATH ~ "; ~/anaconda3/envs/sequence/bin/python " ~ PROCESS_FILE ~ " (%#1) (%#2) (%#3) (%#4);";
 
 Widget gLayout;
 
@@ -64,6 +65,7 @@ VerticalLayout {
         }
         EditLine {
             id: fileNameEdit
+            text: "melody.mid"
         }
     }
 
@@ -79,8 +81,8 @@ VerticalLayout {
 	gLayout = layout;
 	window.mainWidget = gLayout;
 
-    ( cast( ComboBox )( layout.childById( "modelCombo" ) ) ).items = [ "Natural minor" ];
-	( cast( ComboBox )( layout.childById( "tonCombo" ) ) ).items = [ "C", "C#;", "D", "D#", "E", "F", "F#", "G", "G#", "A", "B", "H" ];
+    ( cast( ComboBox )( layout.childById( "modelCombo" ) ) ).items = [ "Natural minor"d ];
+	( cast( ComboBox )( layout.childById( "tonCombo" ) ) ).items = [ "C"d, "C#;"d, "D"d, "D#"d, "E"d, "F"d, "F#"d, "G"d, "G#"d, "A"d, "B"d, "H"d ];
 
     auto clickHandler = new COnClickHandler();
     layout.childById("saveClock").click = clickHandler;
@@ -97,7 +99,10 @@ class COnClickHandler : OnClickHandler {
         const string resExecCommand =
             EXECUTE_COMMAND_GEN .replace("(%#1)", (cast(EditLine)gLayout.childById("tempCombo")).text)
                         .replace("(%#2)", to!string((cast(ComboBox)gLayout.childById("tonCombo")).selectedItemIndex))
-                        .replace("(%#3)", (cast(EditLine)gLayout.childById("lenghtCombo")).text);
+                        .replace("(%#3)", (cast(EditLine)gLayout.childById("lenghtCombo")).text)
+                        .replace( "(%#4)", 
+                            ( cast( DirEditLine )gLayout.childById( "dirNameEdit" ) ).text ~  
+                            ( cast( EditLine )gLayout.childById( "fileNameEdit" ) ).text );
         
         Log.i( "Execute: " ~ resExecCommand );
         auto genExec = executeShell( resExecCommand );
