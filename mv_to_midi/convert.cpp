@@ -41,10 +41,18 @@ int to_note(int keynote, int ton, string harmony = "natural_minor") {
     return keynote + ton;
 }
 
-int main() {
+int main(int argc, char *argv[]) {
     int tpq;
     int ton;
-    string mv_path="melody.seq";
+    string mv_path, save_path;
+    if (argc > 2)
+        mv_path = argv[2];
+    else
+        mv_path = "melody.seq";
+    if (argc > 1)
+        save_path = argv[1];
+    else
+        save_path = "melody.mid";
     ifstream fin(mv_path);
     fin >> tpq >> ton;
     cout << tpq << ' ' << ton << endl;
@@ -82,6 +90,6 @@ int main() {
         fout.addEvent(1, actiontime, midievent);
     }
     fout.sortTracks();
-    fout.write("melody.mid");
+    fout.write(save_path);
     return 0;
 }

@@ -7,8 +7,13 @@ import random
 qpm = sys.argv[1]
 tonality = sys.argv[2]
 takts = int(sys.argv[3])
+if len(sys.argv) > 4:
+    midifile_name = sys.argv[4]
+else:
+    midifile_name = 'melody.mid'
 
-rhytms_half = [[[0, 0.5, 1, 0]], [[0, 0.25, 1, 0], [0, 0.25, 0, 0]], [[0, 1/4, 1, 0], [0, 1/8, 0, 0], [0, 1/8, 0, 0]], [[0, 1/8, 1, 0], [0, 1/8, 0, 0], [0, 1/4, 0, 0]]]
+rhytms_half = [[[0, 0.5, 1, 0]], [[0, 0.25, 1, 0], [0, 0.25, 0, 0]], [[0, 1/4, 1, 0], [0, 1/8, 0, 0], 
+                [0, 1/8, 0, 0]], [[0, 1/8, 1, 0], [0, 1/8, 0, 0], [0, 1/4, 0, 0]]]
 a = []
 for i in range(0, takts*2):
     a += rhytms_half[random.randint(0,len(rhytms_half)-1)]
@@ -31,6 +36,6 @@ for note in melody:
 file.__exit__()
 
 if sys.platform == "linux" or sys.platform == "linux2":
-    os.system('./convert')
+    os.system('./convert ' + midifile_name)
 elif sys.platform == "win32":
-    os.system('./convert.exe')
+    os.system('./convert.exe ' + midifile_name)
