@@ -30,7 +30,9 @@ print(melody)
 oct = 0
 for i in range(1, len(melody)):
     if melody[i][0] == 1 and melody[i-1][0] == 1:
-        melody[i][0] += 7
+        chance = random.randint(1, 6)
+        if chance == 1: melody[i][0] += 7
+        elif chance == 2: melody[i-1][0] += 7
     else:
         if ((melody[i-1][0]-1) % 7) - ((melody[i][0]-1) % 7) > 5:
             oct += 1
