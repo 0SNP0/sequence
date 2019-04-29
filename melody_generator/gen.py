@@ -32,9 +32,9 @@ for i in range(1, len(melody)):
     if melody[i][0] == 1 and melody[i-1][0] == 1:
         melody[i][0] += 7
     else:
-        if (melody[i-1][0] % 7) - (melody[i][0] % 7) > 5:
+        if ((melody[i-1][0]-1) % 7) - ((melody[i][0]-1) % 7) > 5:
             oct += 1
-        if (melody[i][0] % 7) - (melody[i-1][0] % 7) > 5:
+        if ((melody[i][0]-1) % 7) - ((melody[i-1][0]-1) % 7) > 5:
             oct -= 1
     melody[i][0] += (7 * oct)
 print(melody)
