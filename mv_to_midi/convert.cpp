@@ -6,11 +6,20 @@
 using namespace std;
 using namespace smf;
 
+int cdiv(int a, int b) {
+    if (a < 0) return a / b -1;
+    return a / b;
+}
+
+int mod(int a, int b) {
+    return a - b * cdiv(a, b);
+}
+
 int to_note(int keynote, int ton, string harmony = "natural_minor") {
     if (harmony == "natural_minor") {
         --keynote;
-        int oct = keynote / 7;
-        keynote = keynote % 7;
+        int oct = cdiv(keynote, 7);
+        keynote = mod(keynote, 7);
         switch (keynote)
         {
             case 0:
