@@ -27,6 +27,17 @@ model.load()
 for i in range(len(a)-4, -1, -1):
     melody = [[model.apredict(melody[0][0], melody[1][0], melody[2][0], a[i][1], a[i][2], i/len(a)), a[i][1]]] + melody
 print(melody)
+oct = 0
+for i in range(1, len(melody)):
+    if melody[i][0] == 1 and melody[i-1][0] == 1:
+        melody[i][0] += 7
+    else:
+        if (melody[i-1][0] % 7) - (melody[i][0] % 7) > 5:
+            oct += 1
+        if (melody[i][0] % 7) - (melody[i-1][0] % 7) > 5:
+            oct -= 1
+    melody[i][0] += (7 * oct)
+print(melody)
 
 file = open('melody.seq', 'w')
 file.write(qpm + ' ' + tonality + '\n')
