@@ -1,7 +1,7 @@
 import dlangui;
 import dlangui.dialogs.filedlg;
 import std.string : replace;
-import std.process : executeShell;
+import std.process;
 
 mixin APP_ENTRY_POINT;
 
@@ -75,6 +75,11 @@ VerticalLayout {
         id: saveClock
         text: "Create"
     }
+
+    Button {
+        id: trainButton
+        text: "Train"
+    }
 }
 
 		}
@@ -86,8 +91,10 @@ VerticalLayout {
     ( cast( ComboBox )( layout.childById( "modelCombo" ) ) ).items = [ "Natural minor"d ];
 	( cast( ComboBox )( layout.childById( "tonCombo" ) ) ).items = [ "C"d, "C#;"d, "D"d, "D#"d, "E"d, "F"d, "F#"d, "G"d, "G#"d, "A"d, "B"d, "H"d ];
 
-    auto clickHandler = new COnClickHandler();
-    layout.childById("saveClock").click = clickHandler;
+    auto cClickHandler = new COnClickHandler();
+    layout.childById("saveClock").click = cClickHandler;
+    auto tClickHandler = new TOnClickHandler;
+    layout.childById("trainButton").click = tClickHandler;
 
     // show window
     window.show();
@@ -112,6 +119,14 @@ class COnClickHandler : OnClickHandler {
             Log.i(genExec.output);
             return false;
         }
+        return true;
+    }
+}
+
+class TOnClickHandler : OnClickHandler {
+    bool onClick( Widget src ) {
+        auto trainExec = executeShell("cd ..; ~/anaconda3/envs/sequence/bin/python ./melody_generator/train.py");
+        Log.i(trainExec.output);
         return true;
     }
 }
