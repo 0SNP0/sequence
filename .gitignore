@@ -1,10 +1,9 @@
 
 .vscode
-mv_to_midi/*.o
-mv_to_midi/a.exe
+*.o
+*.exe
 melody.seq
 *.mid
-mv_to_midi/convert.exe
-melody_generator/__pycache__
+*__pycache__
 \.directory
 gui/sequence

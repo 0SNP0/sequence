@@ -51,4 +51,4 @@ file.__exit__()
 if sys.platform == "linux" or sys.platform == "linux2":
     os.system('./convert ' + midifile_name)
 elif sys.platform == "win32":
-    os.system('./convert.exe ' + midifile_name)
+    os.system('.\\convert.exe ' + midifile_name)

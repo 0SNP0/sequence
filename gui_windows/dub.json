@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"nex"
+	],
+	"copyright": "Copyright © 2019, nex",
+	"dependencies": {
+		"dlangui": "~>0.9.182"
+	},
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "sequence"
+}

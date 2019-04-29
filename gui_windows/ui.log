@@ -1,0 +1,253 @@
+DlangUI log file
+2019-04-29 21:47:50.237 I  Log level changed to Trace
+2019-04-29 21:47:50.237 I  Logger is initialized
+2019-04-29 21:47:50.237 D  myWinMain()
+2019-04-29 21:47:50.237 I  Current executable: C:\Users\snp\Documents\Projects\sequence\gui_windows\
+2019-04-29 21:47:50.238 I  Command line: 
+2019-04-29 21:47:50.238 I  Command line params: ["C:\\Users\\snp\\Documents\\Projects\\sequence\\gui_windows\\sequence.exe"]
+2019-04-29 21:47:50.238 V  Creating platform
+2019-04-29 21:47:50.238 V  Registering window class
+2019-04-29 21:47:50.238 V  Initializing font manager
+2019-04-29 21:47:50.238 I  Creating Win32FontManager
+2019-04-29 21:47:50.238 I  Win32FontManager.initialize()
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Arial)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Arial Black)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift Light)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift SemiLight)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift SemiBold)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift Light SemiCondensed)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift SemiLight SemiConde)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift SemiCondensed)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift SemiBold SemiConden)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift Light Condensed)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift SemiLight Condensed)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift Condensed)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Bahnschrift SemiBold Condensed)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Calibri)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Calibri Light)
+2019-04-29 21:47:50.239 D  registerFont(Serif,Cambria)
+2019-04-29 21:47:50.239 D  registerFont(Serif,Cambria Math)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Candara)
+2019-04-29 21:47:50.239 D  registerFont(Cursive,Comic Sans MS)
+2019-04-29 21:47:50.239 D  registerFont(MonoSpace,Consolas)
+2019-04-29 21:47:50.239 D  registerFont(Serif,Constantia)
+2019-04-29 21:47:50.239 D  registerFont(SansSerif,Corbel)
+2019-04-29 21:47:50.240 D  registerFont(MonoSpace,Courier New)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Ebrima)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Franklin Gothic Medium)
+2019-04-29 21:47:50.240 D  registerFont(Fantasy,Gabriola)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Gadugi)
+2019-04-29 21:47:50.240 D  registerFont(Serif,Georgia)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Impact)
+2019-04-29 21:47:50.240 D  registerFont(Cursive,Ink Free)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Javanese Text)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Leelawadee UI)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Leelawadee UI Semilight)
+2019-04-29 21:47:50.240 D  registerFont(MonoSpace,Lucida Console)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Lucida Sans Unicode)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Malgun Gothic)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Malgun Gothic Semilight)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft Himalaya)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft JhengHei)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft JhengHei UI)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft JhengHei Light)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft JhengHei UI Light)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft New Tai Lue)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft PhagsPa)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft Sans Serif)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft Tai Le)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft YaHei)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft YaHei UI)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft YaHei Light)
+2019-04-29 21:47:50.240 D  registerFont(SansSerif,Microsoft YaHei UI Light)
+2019-04-29 21:47:50.240 D  registerFont(Cursive,Microsoft Yi Baiti)
+2019-04-29 21:47:50.240 D  registerFont(Serif,MingLiU-ExtB)
+2019-04-29 21:47:50.240 D  registerFont(Serif,PMingLiU-ExtB)
+2019-04-29 21:47:50.240 D  registerFont(Serif,MingLiU_HKSCS-ExtB)
+2019-04-29 21:47:50.241 D  registerFont(Cursive,Mongolian Baiti)
+2019-04-29 21:47:50.241 D  registerFont(MonoSpace,MS Gothic)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,MS UI Gothic)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,MS PGothic)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,MV Boli)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Myanmar Text)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Nirmala UI)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Nirmala UI Semilight)
+2019-04-29 21:47:50.241 D  registerFont(Serif,Palatino Linotype)
+2019-04-29 21:47:50.241 D  registerFont(Serif,Segoe MDL2 Assets)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Segoe Print)
+2019-04-29 21:47:50.241 D  registerFont(Cursive,Segoe Script)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Segoe UI)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Segoe UI Black)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Segoe UI Emoji)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Segoe UI Historic)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Segoe UI Light)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Segoe UI Semibold)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Segoe UI Semilight)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Segoe UI Symbol)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,SimSun)
+2019-04-29 21:47:50.241 D  registerFont(MonoSpace,NSimSun)
+2019-04-29 21:47:50.241 D  registerFont(MonoSpace,SimSun-ExtB)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Sitka Small)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Sitka Text)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Sitka Subheading)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Sitka Heading)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Sitka Display)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Sitka Banner)
+2019-04-29 21:47:50.241 D  registerFont(Serif,Sylfaen)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Tahoma)
+2019-04-29 21:47:50.241 D  registerFont(Serif,Times New Roman)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Trebuchet MS)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Verdana)
+2019-04-29 21:47:50.241 D  registerFont(SansSerif,Yu Gothic)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,Yu Gothic UI)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,Yu Gothic UI Semibold)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,Yu Gothic Light)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,Yu Gothic UI Light)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,Yu Gothic Medium)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,Yu Gothic UI Semilight)
+2019-04-29 21:47:50.242 D  registerFont(Serif,HoloLens MDL2 Assets)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,Fences)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,Glasgow)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,Glasgow Heavy)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,Glasgow Light)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,MicroSquare)
+2019-04-29 21:47:50.242 D  registerFont(SansSerif,Seagull)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,SoftMaker Sans)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,Toledo)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,Toledo Heavy)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,Toledo Light)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,qtquickcontrols)
+2019-04-29 21:47:50.243 D  registerFont(Serif,Book Antiqua)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,Arial Narrow)
+2019-04-29 21:47:50.243 D  registerFont(Serif,Bookman Old Style)
+2019-04-29 21:47:50.243 D  registerFont(Serif,Century)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,Dubai)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,Dubai Light)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,Dubai Medium)
+2019-04-29 21:47:50.243 D  registerFont(Serif,Garamond)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,Century Gothic)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,Leelawadee)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,Microsoft Uighur)
+2019-04-29 21:47:50.243 D  registerFont(Cursive,Monotype Corsiva)
+2019-04-29 21:47:50.243 D  registerFont(SansSerif,MS Reference Sans Serif)
+2019-04-29 21:47:50.243 I  Found 121 font faces
+2019-04-29 21:47:50.243 D  initResourceManagers()
+2019-04-29 21:47:50.245 I  Creating ImageCache
+2019-04-29 21:47:50.245 I  Creating DrawableCache
+2019-04-29 21:47:50.245 D  Calling initSharedResourceManagers()
+2019-04-29 21:47:50.245 D  Calling initStandardEditorActions()
+2019-04-29 21:47:50.245 D  Calling registerStandardWidgets()
+2019-04-29 21:47:50.245 D  Registering standard widgets for DML
+2019-04-29 21:47:50.245 D  initResourceManagers() -- finished
+2019-04-29 21:47:50.245 D  Creating default theme
+2019-04-29 21:47:50.245 D  Loading Derelict GL
+2019-04-29 21:47:50.245 D  Derelict GL - loaded
+2019-04-29 21:47:50.245 I  Entering UIAppMain: ["C:\\Users\\snp\\Documents\\Projects\\sequence\\gui_windows\\sequence.exe"]
+2019-04-29 21:47:50.245 D  Platform.createWindow is called
+2019-04-29 21:47:50.245 V  Platform.createWindow : setDefaultLanguageAndThemeIfNecessary
+2019-04-29 21:47:50.246 V  setDefaultLanguageAndThemeIfNecessary : setting UI language
+2019-04-29 21:47:50.246 V  Loading language file
+2019-04-29 21:47:50.246 D  Loading string resources from file @embedded@/std_en.ini
+2019-04-29 21:47:50.246 V  Calling onThemeChanged
+2019-04-29 21:47:50.246 D  DrawableCache.clear()
+2019-04-29 21:47:50.246 V  setDefaultLanguageAndThemeIfNecessary : setting UI theme
+2019-04-29 21:47:50.246 V  uiTheme setting new theme theme_default
+2019-04-29 21:47:50.255 I  Applying loaded theme theme_default
+2019-04-29 21:47:50.255 D  DrawableCache.clear()
+2019-04-29 21:47:50.255 V  Platform.createWindow : new Win32Window
+2019-04-29 21:47:50.256 D  Screen dimensions: Rect(0, 0, 1920, 1080)
+2019-04-29 21:47:50.262 D  Window onCreate
+2019-04-29 21:47:50.262 V  created window, adding to map
+2019-04-29 21:47:50.941 V  Reloading DerelictGL3
+2019-04-29 21:47:50.950 V  Reloading DerelictGL
+2019-04-29 21:47:50.955 D  glSupport not initialized: trying to create
+2019-04-29 21:47:50.955 V  Compiling solid fill program
+2019-04-29 21:47:50.955 D  compileShader: glslVersion = 4.60, type: GL_VERTEX_SHADER
+2019-04-29 21:47:50.955 D  compileShader: glslVersion = 4.60, type: GL_FRAGMENT_SHADER
+2019-04-29 21:47:50.966 D  Program linked successfully
+2019-04-29 21:47:50.966 V  Program is initialized successfully
+2019-04-29 21:47:50.967 V  Compiling texture program
+2019-04-29 21:47:50.967 D  compileShader: glslVersion = 4.60, type: GL_VERTEX_SHADER
+2019-04-29 21:47:50.967 D  compileShader: glslVersion = 4.60, type: GL_FRAGMENT_SHADER
+2019-04-29 21:47:50.969 D  Program linked successfully
+2019-04-29 21:47:50.969 V  Program is initialized successfully
+2019-04-29 21:47:50.969 D  Shaders compiled successfully
+2019-04-29 21:47:50.969 V  OpenGL is initialized ok
+2019-04-29 21:47:50.983 D  Loading image from file @embedded@/dlangui-logo1.png
+2019-04-29 21:47:51.002 D  Loading image from file @embedded@/list_item_selected.9.png
+2019-04-29 21:47:51.002 D  Loading image from file @embedded@/list_item_focused.9.png
+2019-04-29 21:47:51.003 D  Loading image from file @embedded@/list_item_hovered.9.png
+2019-04-29 21:47:51.003 D  loaded .xml drawable from @embedded@/list_item_background.xml
+2019-04-29 21:47:51.007 D  Loading image from file @embedded@/editbox_background_disabled_focus.9.png
+2019-04-29 21:47:51.007 D  Loading image from file @embedded@/editbox_background_focus.9.png
+2019-04-29 21:47:51.007 D  Loading image from file @embedded@/editbox_background_disabled.9.png
+2019-04-29 21:47:51.008 D  Loading image from file @embedded@/editbox_background_normal.9.png
+2019-04-29 21:47:51.008 D  loaded .xml drawable from @embedded@/editbox_background.xml
+2019-04-29 21:47:51.008 D  Loading image from file @embedded@/btn_pressed.9.png
+2019-04-29 21:47:51.009 D  Loading image from file @embedded@/btn_default.9.png
+2019-04-29 21:47:51.009 D  Loading image from file @embedded@/btn_hover.9.png
+2019-04-29 21:47:51.010 D  Loading image from file @embedded@/btn_normal.9.png
+2019-04-29 21:47:51.010 D  Loading image from file @embedded@/btn_disabled.9.png
+2019-04-29 21:47:51.011 D  loaded .xml drawable from @embedded@/combobox_background.xml
+2019-04-29 21:47:51.011 D  found hdpi resource hdpi_scrollbar_btn_down.png
+2019-04-29 21:47:51.011 D  Loading image from file @embedded@/scrollbar_btn_down.png
+2019-04-29 21:47:51.011 D  loaded .xml drawable from @embedded@/btn_background_transparent.xml
+2019-04-29 21:47:51.013 D  loaded .xml drawable from @embedded@/btn_background.xml
+2019-04-29 21:47:51.053 D  onResize 582x353
+2019-04-29 21:47:51.053 D  resize: measure took 0 ms
+2019-04-29 21:47:51.053 D  resize: layout took 0 ms
+2019-04-29 21:47:51.063 V  created glyph cache page 1024x1024
+2019-04-29 21:47:51.070 V  created image cache page 1024x1024
+2019-04-29 21:47:51.080 D  updateTexture - new texture id=1
+2019-04-29 21:47:51.080 D  updateTexture for cache page - setting image 1024x1024 tx=1
+2019-04-29 21:47:51.087 D  updateTexture - new texture id=2
+2019-04-29 21:47:51.087 D  updateTexture for cache page - setting image 1024x1024 tx=2
+2019-04-29 21:47:51.756 D  updateTexture for cache page - setting image 1024x1024 tx=2
+2019-04-29 21:47:54.962 D  updateTexture for cache page - setting image 1024x1024 tx=2
+2019-04-29 21:47:55.052 E  Abnormal UIAppMain termination
+2019-04-29 21:47:55.052 E  UIAppMain exception: std.process.ProcessException@std\process.d(755): Failed to spawn new process (Не удается найти указанный файл.)
+----------------
+0x0056110C in @trusted std.process.Pid std.process.spawnProcessImpl(scope const(char)[], std.stdio.File, std.stdio.File, std.stdio.File, const(immutable(char)[][immutable(char)[]]), std.process.Config, const(char)[])
+0x0054F334 in @trusted std.process.Pid std.process.spawnProcess(scope const(char[])[], std.stdio.File, std.stdio.File, std.stdio.File, const(immutable(char)[][immutable(char)[]]), std.process.Configconst , char[])
+0x00403905 in bool app.TOnClickHandler.onClick(dlangui.widgets.widget.Widget)
+0x0041298B in int dlangui.core.signals.Signal!(dlangui.widgets.widget.OnClickHandler).Signal.emit(dlangui.widgets.widget.Widget).__foreachbody3(ref bool delegate(dlangui.widgets.widget.Widget)) at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\core\signals.d(219)
+0x0041B817 in int dlangui.core.collections.Collection!(bool delegate(dlangui.widgets.widget.Widget), false).Collection.opApply(int delegate(ref bool delegate(dlangui.widgets.widget.Widget))) at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\core\collections.d(158)
+0x00412949 in bool dlangui.core.signals.Signal!(dlangui.widgets.widget.OnClickHandler).Signal.emit(dlangui.widgets.widget.Widget) at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\core\signals.d(218)
+0x00412925 in bool dlangui.core.signals.Signal!(dlangui.widgets.widget.OnClickHandler).Signal.opCall(dlangui.widgets.widget.Widget) at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\core\signals.d(215)
+0x00419AA1 in bool dlangui.widgets.widget.Widget.handleClick() at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\widgets\widget.d(1149)
+0x00419EAA in bool dlangui.widgets.widget.Widget.onMouseEvent(dlangui.core.events.MouseEvent) at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\widgets\widget.d(1267)
+0x00470999 in bool dlangui.platforms.common.platform.Window.sendAndCheckOverride(dlangui.widgets.widget.Widget, dlangui.core.events.MouseEvent) at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\platforms\common\platform.d(1230)
+0x0047128F in bool dlangui.platforms.common.platform.Window.dispatchMouseEvent(dlangui.core.events.MouseEvent) at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\platforms\common\platform.d(1473)
+0x00494186 in bool dlangui.platforms.windows.winapp.Win32Window.onMouse(uint, uint, short, short) at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\platforms\windows\winapp.d(895)
+0x00494BB9 in WndProc at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\platforms\windows\winapp.d(1591)
+0x74F2BE6B in AddClipboardFormatListener
+0x74F2833A in DispatchMessageW
+0x74F07AFD in CallWindowProcW
+0x6E497AD7 in glDebugEntry
+0x74F2BE6B in AddClipboardFormatListener
+0x74F2833A in DispatchMessageW
+0x74F27BEE in DispatchMessageW
+0x74F279D0 in DispatchMessageW
+0x0044BF44 in int dlangui.platforms.windows.winapp.Win32Platform.enterMessageLoop() at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\platforms\windows\winapp.d(1060)
+0x00403606 in UIAppMain at C:\Users\snp\Documents\Projects\sequence\gui_windows\source\app.d(102)
+0x0042DB7B in int dlangui.platforms.windows.winapp.myWinMain(void*, void*, char*, int) at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\platforms\windows\winapp.d(1388)
+0x004123C8 in DLANGUIWinMain at C:\Users\snp\Documents\Projects\gkl\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\platforms\windows\winapp.d(1242)
+0x0040336A in WinMain at C:\Users\snp\Documents\Projects\sequence\gui_windows\..\..\..\..\AppData\Local\dub\packages\dlangui-0.9.182\dlangui\src\dlangui\platforms\common\platform.d(2084)
+0x005A8016 in WinMainCRTStartup
+0x76F98484 in BaseThreadInitThunk
+0x772E2FEA in RtlValidSecurityDescriptor
+0x772E2FBA in RtlValidSecurityDescriptor
+2019-04-29 21:47:55.355 E  Non-zero Widget instance count when exiting: 22
+2019-04-29 21:47:55.355 I  Destroying DrawableCache
+2019-04-29 21:47:55.355 E  Drawable instace count after destroying of DrawableCache: 10
+2019-04-29 21:47:55.355 I  Destroying ImageCache
+2019-04-29 21:47:55.356 I  Destroying Win32FontManager
+2019-04-29 21:47:55.356 D  Destroying font manager
+2019-04-29 21:47:55.357 E  Non-zero DrawBuf instance count when exiting: 11
+2019-04-29 21:47:55.357 E  Non-zero Style instance count when exiting: 7
+2019-04-29 21:47:55.357 E  Non-zero ImageDrawable instance count when exiting: 10
+2019-04-29 21:47:55.357 E  Non-zero Drawable instance count when exiting: 16
+2019-04-29 21:47:55.357 D  Exiting main
+2019-04-29 21:47:55.357 D  Calling GC.collect
+2019-04-29 21:47:55.358 D  Non-zero DrawBuf instance count when exiting: 11
